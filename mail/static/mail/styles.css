@@ -1,0 +1,234 @@
+body {
+    font-family: "Roboto", "Lucida Grande", Verdana, Arial, sans-serif;
+}
+textarea {
+    min-height: 250px;
+}
+
+.btn:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
+.card {
+    border-radius: 8px 8px 0 0;
+}
+
+.card-header:first-child {
+    border-radius: 8px 8px 0 0;
+}
+
+.bg-light {
+    background-color: white!important;
+}
+
+.card-header {
+    padding: .7rem 1.25rem;
+    background-color: #404040;
+    color: white;
+    border: none;
+}
+
+.form-control {
+    border: none;
+    border-bottom: 1px solid lightgrey;
+    border-radius: 0;
+}
+
+.form-control:focus {
+    border: none;
+    border-bottom: 1px solid lightgrey;
+    box-shadow: none;
+}
+
+#compose-body {
+    border: none;
+}
+
+.btn-primary {
+    background-color: #1a73e8;
+}
+
+
+.nav-item {
+    padding: 5px 0;
+}
+
+.nav-btn {
+    padding: 10px 10px;
+    width: 200px;
+    border: none;
+    background-color: white;
+    color: #5f6368;
+    font-size: .9rem;
+    outline: 0;
+}
+
+.nav-btn:focus {
+    outline: none;
+}
+
+.nav-btn:hover {
+    background-color: rgba(32,33,36,0.059);
+    color: black;
+}
+
+.white-btn {
+    background-color: #ffffff;
+    border: 1px solid #dadce0;
+    border-radius: 4px;
+    font: 500 14px/16px Roboto, Arial, sans-serif;
+    padding: 10px 24px;
+    outline: 0;
+    text-align: center;
+}
+
+.white-btn:hover {
+    background-color: #f7f8f8;
+}
+
+.white-btn:active {
+    background-color: #e8e8e9;
+    border-color: transparent;
+    box-shadow: 0 1px 2px 0 rgba(60,64,67,0.3), 0 2px 6px 2px rgba(60,64,67,0.15);
+}
+
+.compose-btn {
+    box-shadow: 0 1px 2px 0 rgba(60,64,67,0.302), 0 1px 3px 1px rgba(60,64,67,0.149);
+    font-size: .875rem;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 24px;
+    color: #3c4043;
+    display: inline-flex;
+    font-weight: 500;
+    height: 40px;
+    min-width: 56px;
+    overflow: hidden;
+    padding: 0 24px 0 0;
+    text-transform: none;
+    border: none;
+}
+
+.compose-btn:hover {
+    box-shadow: 0 1px 3px 0 rgba(60,64,67,0.302), 0 4px 8px 3px rgba(60,64,67,0.149);
+    background-color: #fafafb;
+}
+
+.compose-btn:focus {
+    outline: none;
+}
+
+.plus-sign {
+    background-image: url(https://www.gstatic.com/images/icons/material/colored_icons/1x/create_32dp.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 28px;
+    content: '';
+    display: block;
+    height: 28px;
+    min-width: 56px;
+}
+
+.mailbox-title {
+    font-size: 22px;
+    font-weight: bold;
+    padding-bottom: 16px;
+    border-bottom: 1px solid lightgrey;
+}
+
+.mailbox-email {
+    font-size: .9rem;
+    padding: 10px 10px;
+    border-bottom: 1px solid lightgrey;
+    border-collapse: collapse;
+    font-weight: bold;
+}
+
+.mailbox-email:hover {
+    cursor: pointer;
+    box-shadow: inset 1px 0 0 #dadce0, inset 0 0 0 #dadce0, 0 1px 2px 0 rgba(60,64,67,.3), 0 0 0 0 rgba(60,64,67,.15);
+}
+
+.subject-title {
+    font-size: 23px;
+    margin-bottom: 18px;
+    color: #202124;
+}
+
+.text-muted {
+    color: #5f6368!important;
+}
+
+.email-btns {
+    margin-right: 15px;
+    padding: 8px 16px;
+}
+
+.btn-outline-secondary {
+    color: #5f6368!important;
+    box-shadow: inset 0 0 0 1px #c3c4c7;
+    border: none;
+    outline: 0;
+}
+
+.btn-outline-secondary:hover {
+    background-color: rgba(32,33,36,0.059)!important;
+    color: #5f6368!important;
+}
+
+.btn-outline-warning {
+    color: #ebad00;
+    box-shadow: inset 0 0 0 1px #fabf19;
+    border: none;
+    outline: 0;
+}
+
+.btn-outline-warning:hover {
+    background-color: #fff2cf!important;
+    color: #ebad00!important;
+}
+
+.btn-outline-danger {
+    color: #d93025;
+    box-shadow: inset 0 0 0 1px #d93025;
+    border: none;
+    outline: 0;
+}
+
+.btn-outline-danger:hover {
+    background-color: #ffeeed!important;
+    color: #d93025!important;
+}
+
+.btn-primary {
+    padding: 6px 16px;
+    font-size: 15px;
+    outline: 0;
+}
+
+.btn-primary:focus {
+    box-shadow: none;
+}
+
+input.form-control.login-input {
+    padding: 13px 15px;
+    border-radius: 4px;
+    border: 2px solid lightgrey;
+    height: auto;
+    line-height: 24px;
+}
+
+input.form-control.login-input:focus {
+    border: 2px solid #1a73e8;
+}
+
+.card-body {
+    padding: 35px;
+}
+
+.login-bottom {
+    color: #5f6368;
+    font-size: 14px;
+    margin-top: 80px;
+}

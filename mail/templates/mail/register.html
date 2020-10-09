@@ -1,0 +1,35 @@
+{% extends "mail/layout.html" %}
+
+{% block body %}
+    <div class="card mx-auto" style="width: 400px; margin-top: 60px">
+        <div class="card-body">
+            <h3 class="card-title text-center">Register</h3>
+
+            <h6 class="card-subtitle text-muted text-center" style="margin-bottom: 40px">to continue to Mail</h6>
+            {% if message %}
+                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                    {{ message }}
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            {% endif %}
+
+            <form action="{% url 'register' %}" method="post">
+                {% csrf_token %}
+                <div class="form-group">
+                    <input class="form-control login-input" type="email" name="email" placeholder="Email Address">
+                </div>
+                <div class="form-group">
+                    <input class="form-control login-input" type="password" name="password" placeholder="Password">
+                </div>
+                <div class="form-group">
+                    <input class="form-control login-input" type="password" name="confirmation" placeholder="Confirm Password">
+                </div>
+                <input class="btn btn-primary" type="submit" value="Register" style="float: right; padding: 6px 20px; font-size: 14px">
+            </form>
+            <div class="login-bottom">Already have an account? <a href="{% url 'login' %}" style="color: #1a73e8; font-weight: 500">Log In here.</a></div>
+        </div>
+    </div>
+
+{% endblock %}
